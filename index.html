@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permainan Tebak Nama Madu by Syaibah Madu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Permainan Tebak Nama Madu</h1>
+    <p>Tebak madu yang saya pikirkan! Pilihan nama: Akasia, Kaliandra, Randu, Kopi, Karet.</p>
+
+    <div class="game-info">
+      <p id="instructions">Tebak nama yang saya pikirkan:</p>
+      <input type="text" id="tebakan" placeholder="Masukkan tebakanmu..." />
+      <button onclick="checkGuess()">Tebak</button>
+
+      <div id="feedback"></div>
+      <div id="scoreboard">
+        <p>Kesalahan: <span id="jumlahSalah">0</span></p>
+        <p>Skor: <span id="skor">0</span></p>
+      </div>
+    </div>
+
+    <div id="gameOverMessage"></div>
+    <div id="congratulationsMessage"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Permainan Tebak Nama Madu by Madu Syaibah. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
